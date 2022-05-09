@@ -1,0 +1,30 @@
+SimulationType                MonteCarlo
+NumberOfCycles                50000
+NumberOfInitializationCycles  10000
+PrintEvery                    1000
+Restartfile                   no
+
+ChargeMethod               Ewald
+CutOff                     12.8
+Forcefield                 UFF
+EwaldPrecision             1e-6
+UseChargesFromCIFFile      yes
+
+
+Framework 0
+FrameworkName Cu-BTC
+UnitCells 1 1 1
+ExternalTemperature 77.0
+ExternalPressure 3325
+
+ComputeDensityProfile3DVTKGrid yes
+WriteDensityProfile3DVTKGridEvery 100
+DensityProfile3DVTKGridPoints 80 80 80
+
+Component 0 MoleculeName             N2
+            MoleculeDefinition       TraPPE
+            TranslationProbability   0.5
+            ReinsertionProbability   0.5
+            RotationProbability      0.5
+            SwapProbability          1.0
+            CreateNumberOfMolecules  0
