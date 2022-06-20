@@ -18,5 +18,5 @@ for i,j,k in zip(fug_pr,eps_pr,load_pr):
     data_eq= [i,j,k]
     pri.append(data_eq)
     
-pri= pd.DataFrame(pri, columns=['fugacity','eps_eff','loading'])
+pri= pd.DataFrame(pri, columns=['fugacity','eps_eff','loading'],index=False)
 pri.to_csv('Prior2.csv')
