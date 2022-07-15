@@ -1,3 +1,6 @@
+# Author: Osaro, Etinosa James.
+# Advsior: Yamil .J. Colon
+
 #!/bin/bash
 
 #$ -q hpc@@colon
