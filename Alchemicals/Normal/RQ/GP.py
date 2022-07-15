@@ -127,7 +127,7 @@ for i in range(len(sigma)):
     rel_error[i] = abs(sigma[i]/abs(y_pred[i]))
 
 #define the limit for uncertainty
-lim = 0.08
+lim = 0.02
 Max = np.amax(rel_error)
 index = np.argmax(rel_error)
 
