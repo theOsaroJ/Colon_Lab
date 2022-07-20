@@ -13,9 +13,9 @@ dd=data.iloc[:,1].values
 
 #plotting
 plt.plot(bin,dd)
-plt.xticks(fontsize=20)
-plt.yticks(fontsize=20)
-plt.xlabel('Pore Size[A]',fontsize=17)
-plt.ylabel('Derivative [Arb. Units]',fontsize=17)
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
+plt.xlabel('Pore Size[A]',fontsize=12)
+plt.ylabel('Derivative [Arb. Units]',fontsize=12)
 plt.savefig('Histogram.png')
 plt.savefig('Histogramm.pdf')
