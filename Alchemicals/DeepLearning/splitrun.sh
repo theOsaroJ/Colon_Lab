@@ -8,7 +8,7 @@ python3 split.py
 
 module unload python
 
-#Creating a folder and putting each file into folder
+#Creating a folder using MOF name and putting each file into folder
 for f in OPT*.csv
 do
   subdir=${f%%.*}
@@ -16,6 +16,7 @@ do
   mv -- "$f" "$subdir"
 done
 
+#Entering those folders one by one
 for d in *; do
   if [ -d "$d" ]; then
     ( cd "$d" &&
