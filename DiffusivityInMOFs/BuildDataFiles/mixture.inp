@@ -1,0 +1,11 @@
+##-------------------The purpose of this file is to generate amount of molecules of methane------------##
+
+
+tolerance 2.0
+filetype xyz
+output output.xyz
+
+structure molecules.xyz
+  number 10
+  inside box 0. 0. 0. 25.832000 25.832000 25.832000
+end structure
