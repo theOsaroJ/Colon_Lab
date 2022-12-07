@@ -20,6 +20,6 @@ Component 0 MoleculeName             methane
             MoleculeDefinition       TraPPE-UA
             TranslationProbability   0.5
             ReinsertionProbability   0.5
-            RotationProbability      0.5
+            RotationProbability      0
             SwapProbability          1.0
             CreateNumberOfMolecules  0
