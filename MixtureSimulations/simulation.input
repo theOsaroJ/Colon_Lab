@@ -1,0 +1,68 @@
+SimulationType                MonteCarlo
+NumberOfCycles                50000
+NumberOfInitializationCycles  5000
+PrintEvery                    1000
+ContinueAfterCrash            no
+WriteBinaryRestartFileEvery   2000
+UseChargesFromCIFFile         yes
+
+Forcefield                    UFF
+RemoveAtomNumberCodeFromLabel yes
+
+Framework 0
+FrameworkName Cu-BTC
+UnitCells 1 1 1
+ExternalTemperature TTT
+ExternalPressure PPP
+
+Component 0 MoleculeName               methane
+            MoleculeDefinition         TraPPE
+            MolFraction                MMM
+            TranslationProbability     0.5
+            RotationProbability        0.5
+            ReinsertionProbability     0.5
+            RegrowProbability          0.5
+            IdentityChangeProbability  1.0
+            NumberOfIdentityChanges    4
+            IdentityChangesList        0 1 2 3
+            SwapProbability            1.0
+            CreateNumberOfMolecules    0
+
+Component 1 MoleculeName               ethane
+            MoleculeDefinition         TraPPE
+            MolFraction                EEE
+            TranslationProbability     0.5
+            ReinsertionProbability     0.5
+            RegrowProbability          0.5
+            RotationProbability        0.5
+            IdentityChangeProbability  1.0
+            NumberOfIdentityChanges    4
+            IdentityChangesList        0 1 2 3
+            SwapProbability            1.0
+            CreateNumberOfMolecules    0
+
+Component 2 MoleculeName               propane
+            MoleculeDefinition         TraPPE
+            MolFraction                PRP
+            TranslationProbability     0.5
+            ReinsertionProbability     0.5
+            RegrowProbability          0.5
+            RotationProbability        0.5
+            IdentityChangeProbability  1.0
+            NumberOfIdentityChanges    4
+            IdentityChangesList        0 1 2 3
+            SwapProbability            1.0
+            CreateNumberOfMolecules    0
+
+Component 3 MoleculeName               butane
+            MoleculeDefinition         TraPPE
+            MolFraction                BBB
+            TranslationProbability     0.5
+            ReinsertionProbability     0.5
+            RegrowProbability          0.5
+            RotationProbability        0.5
+            IdentityChangeProbability  1.0
+            NumberOfIdentityChanges    4
+            IdentityChangesList        0 1 2 3
+            SwapProbability            1.0
+            CreateNumberOfMolecules    0
